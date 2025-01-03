@@ -1,0 +1,1035 @@
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
+
+
+body {
+    font-family: 'Euclid Circular A', sans-serif;
+}
+
+/* ================================================================
+   Navbar Styles
+================================================================ */
+.navbar {
+    background-color: #fafafa;
+    font-family: 'Lato', sans-serif;
+    padding: 0 10%;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #00A896;
+}
+
+@media (min-width:1050px){
+    .navbar{
+        height: 90px;
+    }
+    .hero{
+        padding-top: 100px;
+    }
+    .btn-navbar-div{
+        display: flex; /* Active Flexbox */
+        gap: 20px; /* Espace de 20px entre les boutons */
+        justify-content: center; /* Centre les boutons dans leur conteneur */
+    }
+    
+
+}
+
+@media(max-width:991px){
+    .btn-navbar-div{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        text-align: center;
+    }
+    .btn-navbar{
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+}
+
+#brand {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.navbar-nav {
+    font-weight: bold;
+}
+
+
+
+
+.btn-navbar{
+    all: unset;
+    padding: 0.8vw 3vw;
+    border-radius: 16px;
+    font-weight: 500;
+    font-family:'Euclid Circular A', sans-serif; 
+    font-size: 20px;
+}
+.btn-nav1 {
+    background-color: #fff;
+    color: #2C2D5B;
+    
+}
+.btn-nav2 {
+    background-color: #2C2D5B;
+    color: #fff;
+
+}
+
+.navbar-nav a:hover{
+    padding-bottom: 10px;
+    border-bottom: #107aca 3px solid;
+}
+
+.btn_hover:hover {
+    transform: scale(1.1);
+    transition-duration: 400ms;
+ }
+
+/* ================================================================
+   Hero Section
+================================================================ */
+.hero{
+    background-color: #107aca;
+    color: white;
+    font-weight: 600;
+    font-family:'Euclid Circular A', sans-serif; 
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hero_g{
+    position: relative;
+    width: 60%;
+}
+
+.hero_main{
+    position: absolute;
+    top: 20%;
+    margin-inline: 20%;
+    width: 40vw;
+}
+
+.hero_main h1{
+    font-size: 3vw;
+}
+.hero_main p{
+    margin-block: 30px;
+    font-weight: 100;
+    width: 100%;
+}
+
+.btn_hero{
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn_hero button{
+    all: unset;
+    width: 48%;
+    height: 60px;
+    background-color: #2C2D5B;
+    text-align: center;
+    border-radius: 12px;
+    margin-inline: auto;
+}
+/***************************************  effets **********************************************************************/
+.btn_hover:hover {
+   transform: scale(1.1);
+   transition-duration: 600ms;
+}
+
+
+
+
+
+
+
+
+/****************************************************/
+
+
+@media (max-width:1230px){
+
+    
+    .hero_d  {
+        display: none;
+    }
+    .hero_g{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero_main{
+        width: 90vw;
+        margin-inline: 20px;
+        display: flex ;
+        flex-direction: column;
+        
+    }
+
+   
+    .hero_img img{
+        max-width: 100%;
+        height: auto;
+    }
+    .hero_img {
+        width: 60%;
+        height:auto;
+    }
+
+    .hero_main h1{
+        font-size: 5vw;
+    }
+
+   
+
+}
+
+@media (max-width:550px) {
+
+    .btn_hero {
+        
+            flex-direction: column ; 
+            width: 90vw; 
+            margin: 0px; 
+            height: 150px;
+            margin-top: 70px;
+            font-size: 1.5rem;
+            justify-content: space-between;
+
+    }
+
+    .btn_hero button{
+        width: 100%;
+        margin: unset;
+    }
+
+    .hero{
+        height: 800px;
+        width: 100%;
+
+    }
+
+    .hero p{
+        font-size:20px;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero_main{
+        margin-inline: 0px;
+        top: 10%;
+        
+    }
+
+    .hero_img {
+        display: none;
+    }
+
+    .btn_hero2{
+        margin-top: 50px;
+    }
+
+    
+
+
+}
+
+
+
+/* ================================================================
+   Avantages Section
+================================================================ */
+.avantages_p {
+    width: 100%;
+    height: 700px;
+    background-color: #f8fafb;
+    border-radius: 30px 30px 0 0;
+    margin-top: -30px;
+}
+
+.avantages_p h1 {
+    color: #2C2D5B;
+    font-weight: 800;
+    font-size: 2.5rem;
+    font-family: 'Euclid Circular A', sans-serif;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: #2C2D5B;
+    text-underline-offset: 10px;
+}
+
+.avantages_titre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 20%;
+}
+
+.avantages_titre img {
+    margin-top: -40px;
+}
+
+.avantages_body {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10%;
+    margin-top: 3%;
+    font-family: 'Lato', sans-serif;
+    color: #4F4F4F;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.avantages_body h2 {
+    color: #2C2D5B;
+    font-size: 24px;
+    margin-block: 25px;
+}
+
+
+
+.avantages_body p {
+    width: 360px;
+    text-align: left;
+}
+
+.btn_avantages {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.btn_avantages1, 
+.btn_avantages2 {
+    padding: 10px 20px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.avantages_body h2{
+    font-weight: 600;
+    font-family:'Euclid Circular A', sans-serif; 
+}
+
+
+/* ================================================================
+   Responsive Styles
+================================================================ */
+/* Mobile Styles */
+@media screen and (max-width: 1080px) {
+    /* Section Hero */
+   
+
+    .avantages_titre img {
+        display: none;
+    }
+
+
+
+
+
+    /* Avantages Section */
+    .avantages_p {
+        margin-top: -20px; /* Ajouter de l'espacement pour éviter un chevauchement */
+        border-radius: 15px 15px 0 0; /* Enlever les coins arrondis pour s'aligner au design mobile */
+        padding-top: 30px; /* Ajouter un padding pour aérer le contenu */
+        width: 100%;
+        height: 100%;
+    }
+
+    .avantages_body {
+        flex-direction: column; /* Organiser les éléments en colonne */
+        align-items: center; /* Centrer les éléments */
+        padding: 10px 5%; /* Réduire les marges pour mieux s'adapter */
+    }
+
+    .avantages_body h2 {
+        text-align: center; /* Centrer les titres */
+        margin-bottom: 15px; /* Ajouter de l'espace sous chaque titre */
+    }
+
+    .avantages_body img {
+        text-align: center;
+    }
+
+    .avantages_body p {
+        width: 100%; /* Utiliser toute la largeur disponible */
+        text-align: center; /* Centrer le texte */
+        margin-bottom: 20px; /* Ajouter de l'espacement pour une meilleure lisibilité */
+    }
+
+    /* Boutons Avantages */
+    .btn_avantages {
+        flex-direction: column; /* Organiser les boutons en colonne */
+        gap: 10px; /* Ajouter de l'espace entre les boutons */
+        margin: 20px auto; /* Centrer les boutons */
+        width: 90%; /* S'adapter au viewport */
+    }
+
+    .btn_avantages1, 
+    .btn_avantages2 {
+        width: 100%; /* Prendre toute la largeur du conteneur */
+        padding: 10px 15px; /* Ajuster le padding pour un design mobile */
+        
+    }
+
+    /* General Responsive Fixes */
+    .navbar {
+        padding: 10px; /* Réduire l'espacement pour économiser de l'espace */
+    }
+
+    #brand {
+        font-size: 28px; /* Réduire la taille du logo pour mobile */
+        margin-left: 10px; /* Ajuster l'espacement du logo */
+    }
+
+    .collapse > .btn-navbar {
+        margin: 10px auto; /* Centrer les boutons et ajuster l'espacement */
+        padding: 10px 20px; /* Réduire la taille des boutons */
+        font-size: 12px; /* Ajuster la taille du texte des boutons */
+    }
+
+    .btn-nav1, 
+    .btn-nav2 {
+        width: 100%; /* Les boutons prennent toute la largeur */
+        margin-bottom: 10px; /* Ajouter de l'espace entre les boutons */
+    }
+
+    .avantages_body img{
+        display: flex;
+        justify-self: center;
+    }
+    .avantages_titre{
+        justify-content: center;
+    }
+    .avantages_body h2{
+        font-size:26px ;
+        
+    }
+}
+
+
+
+@media (max-width:600px) {
+    .avantage_eco {
+        margin-top: 10px;
+        
+    }
+    .avantage_img {
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* Desktop Styles */
+@media screen and (min-width: 1080px) {
+    .collapse {
+        padding-inline: 5%;
+    }
+}
+
+
+
+
+/* les etapes *************************************************/
+.step_principale{
+    background-color: #107aca;
+    color: #F8F8FF;
+    font-family:  'Euclid Circular A', sans-serif;
+    border-top: 20px solid #107aca00;
+    border-left: 10vw solid #00000000;
+    border-right: 10vw solid #00000000;
+}
+
+.step_title{
+    display: flex;
+}
+
+.img_title {
+width: 15vw;
+height: auto;
+}
+.step_title h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: #F8F8FF;
+    font-weight: 800;
+    font-size: 2.5rem;
+    font-family: 'Euclid Circular A', sans-serif;
+
+}
+
+.step_1, .step_2, .step_3 {
+    width: 550px;
+    margin-top: 0px ;
+
+
+}
+
+.step1_texte ,
+.step2_texte ,
+.step3_texte  {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+
+
+
+.step1_title h2,
+.step2_title h2,
+.step3_title h2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 40px;
+    color: #2C2D5B;
+    font-family: Lato , sans-serif;
+}
+
+.step_2{
+    margin-left: auto ;
+    margin-top: 0px;
+}
+
+.vecteur_image img{
+    width: 55vw;
+    height: auto;
+    margin: 0 auto 0 10% ;
+    display: block;
+}
+
+@media (max-width: 630px) { /* Smartphones */
+    
+    .step_1, .step_2, .step_3 {
+        width: 90vw;
+        margin-top: 40px ;
+        margin-inline: auto;
+        justify-items: center;
+    
+    
+    }
+
+    .step_1{
+        margin-top: 10px;
+    }
+
+    .vecteur_image{
+        display: none;
+    }
+    .step_principale{
+        border-top: 50px solid #00000000;
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    .img_title{
+        display: none;
+    }
+    .step_title{
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .step_title h1{
+        font-weight: 800;
+        font-size: 2rem;
+        font-family: 'Euclid Circular A', sans-serif;
+
+        margin-inline: auto;
+    }
+
+    .step1_title h2,
+.step2_title h2,
+.step3_title h2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    
+}
+.step1_title h2{
+    margin-top: 40px;
+}
+.step1_title img,
+.step2_title img,
+.step3_title img {
+    width: 40px;
+    height: auto;
+}
+
+    .step1_texte,
+.step2_texte,
+.step3_texte {
+    margin-top: 20px;
+    text-align: left;
+    font-weight: 300;
+    
+}
+
+.step1_title img{
+    margin-top: 25px;
+}
+
+.step1_texte p ,
+.step2_texte p,
+.step3_texte p {
+    text-align: center; 
+    font-size: 16px;
+}
+
+}
+
+@media (max-width: 370px) { /* Smartphones */
+    
+  .step_title h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .step1_title h2,
+  .step2_title h2,
+  .step3_title h2 {
+      font-size: 24px;
+      font-weight: bold;
+      
+  }
+  .step1_title img,
+.step2_title img,
+.step3_title img {
+    width: 30px;
+    height: auto;
+}
+.step p{
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+
+}
+
+/*reviews **********************************************************/
+
+
+.review_principale{
+    font-family: roboto,sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    background-color: #F8F8FF;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -50px;
+    flex-wrap: wrap;
+   
+}
+
+.review_principale button{
+    all: unset;
+
+}
+
+.reviews_title{
+    color: #2C2D5B;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+
+.reviews_title h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    font-family: 'Euclid Circular A', sans-serif;
+    text-align: center;
+}
+
+.reviews_body{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.reviews_body button{
+margin-block: auto ;
+
+}
+
+.cart{
+    width: 25vw;
+    min-width: 350px;
+    height: 100%;
+    margin-inline: auto;
+   
+}
+
+
+
+
+.cart_hidden{
+    display: none;
+}
+
+
+
+
+.sub_cart{
+    margin-top: 70px;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+
+
+}
+.sub_cart h3,
+.sub_cart p{
+    margin-inline: 5%;
+}
+
+.sub_cart h3{
+    margin-top: 10px;
+}
+
+.B_L, .B_F{
+    width: 100%;
+    height: 50px;
+    background-color: #107aca;
+    margin:0px;
+    border-radius: 40px 40px 0px 0px ;
+    margin-bottom: 10px;
+    
+}
+
+.B_F{
+    width: 60% ;
+    background-color: #2C2D5B;
+    float: right;
+}
+
+.btn-review{
+    all: unset;
+}
+
+
+.cart img {
+    display: flex;
+    margin-inline: auto;
+}
+
+.name_reviews {
+    font-weight: 500;
+}
+
+@media (max-width: 1250px) {
+    
+   
+}
+
+@media (max-width: 850px) {
+     
+ .reviews_title h1{
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: 'Euclid Circular A', sans-serif;
+
+
+ }
+
+    
+}
+
+@media (max-width: 520px) {
+   .cart{
+    width: 320px;
+    min-width: unset;
+    margin-inline: auto;
+    margin-bottom: 30px;
+
+
+   }
+   .reviews_title{
+    width: 100%;
+    padding: 40px 20px ;
+   }
+
+   .btn-review{
+    width: 30px;
+    margin-inline: 10px;
+   }
+    
+   .review_principale{
+    width: 100%;
+    flex-wrap: unset;
+    border-radius: 20px 20px 0 0;
+   }
+
+   .reviews_body{
+    width: 100%;
+    flex-wrap: unset;
+    
+   }
+
+   .btn-review img{
+    width: 35px;
+    height: auto;
+    margin-inline: 2px;
+   }
+
+   .cart img{
+    width: 70vw;
+    margin-bottom: 50px;
+   }
+   .sub_cart{
+    margin: unset;
+   }
+}
+
+
+/*ecologie**********************************************************/
+
+.ecologie_principale{
+    font-size: 24px;
+    font-family: Lato,sans-serif;
+    background-color: #00A896;
+    color: white;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    border-radius: 36px 36px 0 0;
+    margin-top: -50px;
+    padding-block: 150px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.barre_verticale{
+    width: 5px ;
+    height: 450px;
+    background-color: #d9d9d9;
+}
+
+.ecologie_paragraphes{
+    justify-self: center;
+    padding-right: 10%;
+    margin-left: 5%;
+    justify-content: space-between;
+
+}
+
+.ecologie_body{
+    width: 50%;
+    display: flex;
+}
+.ecologie_titre{
+    margin-inline: auto;
+    font-weight: 600;
+    font-size: 2.5rem;
+    font-family: 'Euclid Circular A', sans-serif;
+}
+.ecologie_paragraphes p{
+    margin-top: 6%;
+}
+.ecologie_titre h2{
+    margin-inline: auto;
+    text-align: center;
+}
+
+@media (max-width:800px ) {
+    .ecologie_titre img {
+        width : 50%;
+        margin-inline: auto;
+
+    }
+    .ecologie_principale{
+        font-size: 16px;
+        padding-block: 30px;
+
+    }
+    .barre_verticale{
+        display: none;
+    }
+    .ecologie_body{
+        width: 100%;
+    }
+    .ecologie_titre{
+        text-align: center;
+    }
+
+    .ecologie_titre h2 {
+        font-size: 90%;
+    }
+}
+.pub_principale{
+    background-color: #F8F8FB;
+    font-family: Lato , sans-serif;
+    border-radius: 36px 36px 0 0;
+    margin-top: -50px;
+
+}
+
+
+.pub_title{
+    color: #1d1b1b ;
+    padding-block: 60px;
+    text-align: center;
+    
+}
+
+
+.pub_unit_body h5{
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: #230B34;
+    font-family: Lato , sans-serif;
+
+}
+.pub_body{
+    width: 100vw;
+    max-width: 896px;
+    height: 404px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    padding: 20px;
+
+    
+}
+.pub_unit{
+    width: 396px;
+    height: 156px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 20px;
+}
+
+.pub_unit img {
+    width: 124px;
+    height: 124px;
+    margin: auto 15px;
+
+}
+
+.pub_ville_g{
+    display: flex;
+    
+}
+.pub_unit_body{
+    width: 50%;
+    padding-block:20px ;
+}
+.pub_ville_g img {
+    width: 30px;
+    height: 65px;
+    margin: 0px;
+}
+.pub_ville {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    color: #4F4D4D; 
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+.pub_ville h6{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.pub_ville :last-child{
+    margin-top: 15px;
+}
+
+
+.pub_laterale{
+    margin-left: auto;
+}
+
+.colis_taille {
+    margin-top: auto;
+}
+
+.btn_pub{
+    display: flex;
+    justify-content: center;
+}
+.btn_pub button{
+    all: unset;
+    width: 50vw;
+    max-width: 556px;
+    min-width: 300px;
+    background-color: #230B34;
+    color: #fff;
+    height: 76px;
+    border-radius: 48px;
+    text-align: center;
+    font-size: 1.3em ;
+    font-family: Lato , sans-serif;
+    font-weight: bold;
+    margin-block: 50px;
+
+}
+
+.pub_title h1{
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1em;
+    
+}
+
+@media (max-width: 860px ) {
+    .pub_laterale{
+        margin-left: unset;
+        margin-block: 5%;
+    }
+    
+    .pub_body{
+        height: 100%;
+        justify-content: center;
+    }
+
+    .btn_pub button {
+        height: 50px;
+        font-size: 16px;
+
+    }
+
+}
+
+@media(max-width:400px) {
+    .pub_title h1{
+        font-weight: 700;
+        font-size: 2.25rem;
+        
+    }
+
+}
+

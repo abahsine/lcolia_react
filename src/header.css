@@ -1,0 +1,186 @@
+/* Navbar principale */
+.navbarReact {
+    height: 100px;
+    display: flex;
+    background-color: #107aca;
+    align-items: center;  /* Aligne les éléments verticaux au centre */
+    justify-content: space-between;  /* Espace entre le logo et les boutons */
+    width: 100%;
+    padding: 0 10px;  /* Ajout de padding horizontal pour espacer les éléments */
+    position: sticky;  /* L'élément devient "sticky" */
+    top: 0;            /* L'élément se fixe en haut de la page */
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo de la navbar */
+.logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: Lato, Helvetica, sans-serif;
+    margin-left: 10px;  /* Espacement à gauche du logo */
+}
+
+/* Section des boutons */
+.buttons {
+    display: flex;
+    align-items: center;  /* Centre les boutons verticalement */
+}
+
+/* Liste des boutons (ul) */
+.buttons ul {
+    list-style: none;  /* Retirer les puces */
+    display: flex;
+    gap: 20px;  /* Espacement entre les éléments de la liste */
+    margin: 0;  /* Supprimer les marges par défaut */
+    padding: 0;  /* Supprimer le padding par défaut */
+}
+
+/* Styles des boutons */
+.button1, .button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 14vw;
+    height: 50px;
+    min-width: 250px;  /* Assure une largeur minimale */
+    padding: 0 20px;  /* Padding interne */
+}
+
+.button1 {
+    background-color: #2C2D5B;
+    color: #fff;
+}
+
+.button2 {
+    background-color: #fff;
+    color: #2C2D5B;
+}
+
+/* Profil utilisateur */
+.profil {
+    display: flex;
+    justify-content: flex-end;  /* Aligne le profil à droite */
+    align-items: center;  /* Centrer verticalement le contenu du profil */
+    padding-right: 1vw;
+    background-color: #107aca;
+} 
+
+.profil img {
+    width: 50px;  /* Taille de l'image */
+    height: 50px;
+    border-radius: 50%;  /* Faire une image ronde */
+    border: 1px solid #fff;
+    background-color: #ffffff;
+    margin: 10px;
+}
+
+/* Bouton Se connecter */
+.Se_connecter {
+    background-color: #fff;
+    color: #107aca;
+    --bs-btn-active-bg: #107aca;
+    --bs-btn-active-color: #000 ; 
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 20px;  /* Ajouter un peu de padding horizontal */
+    border-radius: 16px;  /* Arrondir les coins */
+    width: 200px;
+}
+
+/* Navbar profil (optionnel pour ajout d'autres éléments) */
+.nav_profil {
+    display: flex;
+    justify-content: flex-end;  /* Aligner à droite */
+    background-color: #fff;
+    padding-block: 0px;
+}
+
+.Se_connecter:hover{
+    background-color: #fff;
+    color: #000;
+    
+}
+
+
+
+.dropdown-menu{
+    width: 100%;
+}
+
+.dropdown-item{
+    border-top: 1px solid #3333332f;
+}
+
+@media(min-width : 1024px){
+    .buttons {
+        margin-left: 20%;
+       
+    }
+}
+@media(max-width : 1024px){
+    .logo{
+        
+      font-size: 1.2rem;
+      font-weight: 600;
+
+    }
+
+    .profil {
+        padding-right: 5px;
+
+    }
+    .Se_connecter{
+        width: 70px;
+        height: 50px;
+        font-size: 0.7rem;
+        padding-inline: 3px;
+        padding-block: 0px;
+    }
+    .profil img{
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+        margin-right: 5px;
+        padding: 0px;
+
+    }
+
+    .button1 ,.button2 {
+        min-width: unset;
+        width: 150px;
+        padding: 2px 2px;
+        font-size: 0.8rem;
+    }
+
+    .dropdown-menu{
+        width: 100px;
+    }
+
+    .navbar{
+        height: 70px;
+        padding: 2px;
+    }
+}
+
+.StarReviews {
+    color: #FFD700;
+    font-size: 30px;
+}
+
+.landingPage_header {
+    background-color: #fafafa;
+    color: #107aca;
+}
+
+.landingPage_header_seconnecter {
+    background-color: #107aca;
+    color: white;
+}
+
+  
