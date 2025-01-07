@@ -9,6 +9,8 @@ import LandingPage from './body.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <App></App>
+    <LandingPage></LandingPage>
     <Navbar></Navbar>
 
 

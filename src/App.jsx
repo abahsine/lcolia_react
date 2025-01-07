@@ -4,28 +4,29 @@ import { Navbar, Nav, Button, Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './header.css' ;
 import Dropdown from 'react-bootstrap/Dropdown';
+import { RiLogoutCircleFill } from "react-icons/ri";
 
 
 
 const connectUser = true;
-const type_user = "transporter";
+const type_user = "user";
 const Name_user = "bahsine";
 const picUser = "../public/PicPerso.jpg";
 const width_screen = window.innerWidth;
-const header_LPage = false; 
+const header_LPage = true; 
 
 function Profil() {
   const userName = connectUser ? Name_user : "Se connecter";
   const userPic = connectUser ? picUser : "../public/userConnect.png";
   const menuItems = connectUser ? (
     <>
-      <Dropdown.Item className='dropdowon-item ' href="#/action-1">Se deconnecter</Dropdown.Item>
-      <Dropdown.Item className='dropdown-item' href="#/action-2">Mes annonces</Dropdown.Item>
-      <Dropdown.Item className='dropdowon-item' href="#/action-3">Notification</Dropdown.Item>
+      <Dropdown.Item className='dropdowon-item  dropDown_1'  href="#/action-1"><RiLogoutCircleFill className='icon-drop-down'/>Se deconnecter</Dropdown.Item>
+      <Dropdown.Item className='dropdown-item' href="#/action-2"> <RiLogoutCircleFill className='icon-drop-down'/> Mes annonces</Dropdown.Item>
+      <Dropdown.Item className='dropdowon-item' href="#/action-3"> <RiLogoutCircleFill className='icon-drop-down'/> Notification</Dropdown.Item>
     </>
   ) : (
     <>
-      <Dropdown.Item className='dropdowon-item' href="#/action-1">Se connecter</Dropdown.Item>
+      <Dropdown.Item className='dropdowon-item dropDown_1' href="#/action-1">Se connecter</Dropdown.Item>
       <Dropdown.Item className='dropdown-item' href="#/action-2">S'inscrire</Dropdown.Item>
     </>
   );
@@ -106,7 +107,7 @@ const App = () => {
           Lcolia
         </Navbar.Brand>
      <Buttons></Buttons>
-     <div className={header_LPage== true ? 'separateur' : 'separateur_normale'}></div>
+     <div className={header_LPage== true ? 'separateur ' : 'separateur_normale'}></div>
         <Navbar.Text className='nav_profil' >
           <Profil ></Profil>
         </Navbar.Text>

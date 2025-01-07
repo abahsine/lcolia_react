@@ -112,10 +112,20 @@
 
 .dropdown-menu{
     width: 100%;
+
 }
 
+.icon-drop-down{
+    font-size: 1.3rem;
+    margin-right: 5px;
+}
 .dropdown-item{
     border-top: 1px solid #3333332f;
+    padding-inline: 5px;
+    color: #2C2D5B;
+    font-weight: 400;
+    font-size: 1rem;
+    
 }
 
 @media(min-width : 1024px){
@@ -129,12 +139,20 @@
         
       font-size: 1.2rem;
       font-weight: 600;
+      flex: unset;
 
     }
 
     .profil {
-        padding-right: 5px;
+        padding-right: 0px;
+        border-radius: 16px;
 
+
+    }
+
+    .profil :active {
+        background-color: #fff;
+        
     }
     .Se_connecter{
         width: 70px;
@@ -160,13 +178,22 @@
     }
 
     .dropdown-menu{
-        width: 100px;
+        width: 100%;
     }
 
     .navbar{
         height: 70px;
         padding: 2px;
     }
+    .separateur{
+        display: none;
+    }
+    .separateur_normale{
+        display: none;
+    }
+   
+
+
 }
 
 .StarReviews {
@@ -201,4 +228,8 @@
     height: 60%;
     background-color: #fff;
     margin-inline: 30px;
+}
+
+.dropDown_1{
+    border: unset;
 }
