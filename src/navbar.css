@@ -1,0 +1,169 @@
+.nav_test {
+    width: 147px;
+    padding: 16px;
+    padding-bottom: 0px;
+    background-color: #107aca;
+    height: 100vh;
+}
+
+.principale {
+    display: flex;
+}
+
+
+.Accueil_main{
+    
+    width:100% ;
+    margin: 24px;
+}
+
+.Accueil_secondaire{
+    padding: 24px 48px;
+    margin-inline: auto;
+    background-color: #f8f8ff;
+    max-width: 1000px;
+    
+}
+
+.Accueil_recap{
+    width: 100%;
+    height: 50%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    grid-template-rows: 1fr 1fr;
+}
+
+#voir_plus  {
+    font-size: 1.6rem;
+}
+
+.Accueil_recap a {
+    all: unset;
+}
+.Accueil_recap_child{
+    padding: 10px 30px;  
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    max-width: 500px;
+    
+}
+
+.Accueil_recap_child:hover {
+    transform: scale(1.5) 1s;
+    background-color: #107aca;
+    color: white;
+}
+
+.Accueil_recap_child h3 {
+    font-weight: 600;
+    font-size: 3rem;
+   
+}
+.Accueil_notif{
+    margin-top: 40px;
+    max-width: 900px;
+}
+
+.Accueil_notif_titre {
+    display: flex;
+    width: 100%;
+    padding-block: 20px;
+    justify-content: space-between;
+}
+
+
+.Accueil_notif_child{
+    background-color: #fff;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-bottom: 20px;
+    align-content: center;
+    align-items: center;
+}
+.Accueil_notif a{
+    all: unset;
+    color: #107aca;
+    font-size: 16px;
+    font-weight: 700;
+}
+.notif_unit p{
+    color: #757575;
+    padding-left: 3px;
+}
+
+.notif_unit h3 {
+    font-size: 1.2rem;
+}
+#voir_plus{
+    font-size: 1.3rem;
+  
+}
+
+
+@media (max-width: 576px) {
+    .nav_test{
+        all: unset;
+        position:fixed;
+        bottom: 0px;
+        width: 100vw;
+        height: 59px ;
+        left: 0; 
+        background-color: #107aca; 
+     
+    }
+
+    .Accueil_main{
+        margin: 0px;
+    }
+    
+    .Accueil_secondaire {
+
+        padding: 15px 15px ;
+
+    }
+
+    .Accueil_recap {
+     
+        width: 100%;
+        height: 300px;
+    }
+
+    .Accueil_recap_child {
+        padding: 15px;
+        justify-content: center;
+        box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+        
+    }
+
+    .Accueil_recap_child h3 {
+        font-weight: 500;
+        font-size: 1.5rem;
+       
+    }
+
+    #voir_plus{
+        font-size: 1rem;
+      
+    }
+
+    .notif_unit h3 {
+        font-size: 1.2rem;
+    }
+
+    .Accueil_notif {
+        margin-top: 15px;
+    }
+
+    .Accueil_main {
+        padding-bottom: 40px;
+    }
+}

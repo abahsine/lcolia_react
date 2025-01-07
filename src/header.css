@@ -20,6 +20,7 @@
     font-size: 2rem;
     font-family: Lato, Helvetica, sans-serif;
     margin-left: 10px;  /* Espacement à gauche du logo */
+    flex: 1;
 }
 
 /* Section des boutons */
@@ -77,7 +78,7 @@
     border-radius: 50%;  /* Faire une image ronde */
     border: 1px solid #fff;
     background-color: #ffffff;
-    margin: 10px;
+    margin-right: 10px;
 }
 
 /* Bouton Se connecter */
@@ -183,4 +184,21 @@
     color: white;
 }
 
+.buttons {
   
+   margin: 0px;
+}
+
+.separateur{
+    width: 2px ;
+    height: 70%;
+    background-color: #107aca;
+    margin-inline: 30px;
+}
+
+.separateur_normale {
+    width: 2px ;
+    height: 60%;
+    background-color: #fff;
+    margin-inline: 30px;
+}

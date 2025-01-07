@@ -7,12 +7,12 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 
 
-const connectUser = false;
+const connectUser = true;
 const type_user = "transporter";
 const Name_user = "bahsine";
 const picUser = "../public/PicPerso.jpg";
 const width_screen = window.innerWidth;
-const header_LPage = true ; 
+const header_LPage = false; 
 
 function Profil() {
   const userName = connectUser ? Name_user : "Se connecter";
@@ -49,7 +49,7 @@ function Profil() {
     <div className="profil">
       
       <Dropdown className="dropdown dropdown-mobile">
-      <Dropdown.Toggle id="dropdown-basic" className={header_LPage=true ? "Se_connecter dropdown-mobile landingPage_header_seconnecter" : "Se_connecter dropdown-mobile"}>
+      <Dropdown.Toggle id="dropdown-basic" className={header_LPage==true ? "Se_connecter dropdown-mobile landingPage_header_seconnecter" : "Se_connecter dropdown-mobile"}>
           <img src={userPic} alt="" />
         </Dropdown.Toggle>
         <Dropdown.Menu className='Dropdown-menu dropdown-mobile'>
@@ -106,7 +106,8 @@ const App = () => {
           Lcolia
         </Navbar.Brand>
      <Buttons></Buttons>
-        <Navbar.Text className='nav_profil'>
+     <div className={header_LPage== true ? 'separateur' : 'separateur_normale'}></div>
+        <Navbar.Text className='nav_profil' >
           <Profil ></Profil>
         </Navbar.Text>
     </div>
@@ -114,6 +115,14 @@ const App = () => {
     </>
   );
 };
+
+function Avatar (){
+  return <div>
+    <h1>{}
+      
+    </h1>
+  </div>
+}
 
 
 export default App;

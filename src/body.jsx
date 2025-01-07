@@ -20,12 +20,13 @@ function LandingPage() {
 
 
 
+
 function Hero() {
     return (
         <div className="hero">
             <div className="hero_g">
                 <div className="hero_img">
-                    <img src="../public/landingPage/assets/hero_main.svg" alt="Hero Main" />
+                    <img src="/landingPage/assets/hero_main.svg" alt="Hero Main" />
                 </div>
                 <div className="hero_main">
                     <div className="hero_text">
